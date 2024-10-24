@@ -1,0 +1,85 @@
+/* Genel stil */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+header {
+    background-color: #28a745;
+    padding: 20px 0;
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+/* Sekme yapısı */
+.tabs {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    background-color: #f1f1f1;
+    margin: 0;
+    border-bottom: 2px solid #28a745;
+}
+
+.tabs li {
+    margin: 0 15px;
+}
+
+.tabs input[type="radio"] {
+    display: none;
+}
+
+.tabs label {
+    padding: 15px 20px;
+    background-color: #ddd;
+    cursor: pointer;
+    border-radius: 5px 5px 0 0;
+}
+
+.tabs label:hover {
+    background-color: #ccc;
+}
+
+.tabs input[type="radio"]:checked + label {
+    background-color: #28a745;
+    color: white;
+}
+
+/* İçerik */
+.tab-content {
+    display: none;
+    padding: 20px;
+}
+
+#guller:checked ~ .content #content-guller,
+#laleler:checked ~ .content #content-laleler,
+#orkideler:checked ~ .content #content-orkideler {
+    display: block;
+}
+
+img {
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
